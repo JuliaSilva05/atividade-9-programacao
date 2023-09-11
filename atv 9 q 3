@@ -1,0 +1,16 @@
+//atv 9 q 3
+#include <stdio.h>
+#include <stdlib.h>
+int tres(int A, int B)
+{
+    int soma = A + B;
+    A = soma;
+}
+int main(){
+    int A,B;
+    int resultado;
+    scanf("%d",&A);
+    scanf("%d",&B);
+    resultado = tres(A,B);
+    printf("%d",resultado);
+ }
