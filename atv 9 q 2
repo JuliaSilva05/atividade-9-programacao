@@ -1,0 +1,22 @@
+//atv 9 q 2
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int dis,lit;
+    int consumo;
+    printf("Insira a distancia em km: \n");
+    scanf("%d",&dis);
+    printf("Insira a quantidade de litros de gasolina consumidos: \n");
+    scanf("%d",&lit);
+    consumo = dis / lit;
+    if (consumo<8){
+        printf("Venda o carro!");
+    } else if (8<=consumo<=14){
+        printf("Econômico!");
+    } else if (consumo>14){
+        printf("Super econômico");
+    }
+    
+    return 0;
+}
