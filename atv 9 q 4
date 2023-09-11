@@ -1,0 +1,22 @@
+//atv 9 q 4
+#include <stdio.h>
+#include <stdlib.h>
+int quatro(int n)
+{
+    if (n==1||n==2){
+        return n;
+    }
+    else{
+        return 2*quatro(n-1) + 3*quatro(n-2);
+    }
+    
+}
+int main(){
+    int n;
+    int res;
+    printf("Digite um número\n");
+    scanf("%d",&n);
+    res = quatro(n);
+    printf("resultado: %d",res);
+    
+ }
