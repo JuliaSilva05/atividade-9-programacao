@@ -1,0 +1,17 @@
+//atv 9 q 1
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    float alt,raio,vol;
+    float pi = 3.141592;
+    printf("Insira a altura de um cilindro: ");
+    scanf("%f",&alt);
+    printf("Insira o raio de um cilindro: ");
+    scanf("%f",&raio);
+    vol = pi * raio*raio * alt;
+    printf("O volume é: ");
+    printf("%f",vol);
+    
+    return 0;
+}
